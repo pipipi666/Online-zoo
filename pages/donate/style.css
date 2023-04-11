@@ -1,0 +1,495 @@
+@import '../../assets/styles/styles.css';
+
+.banner {
+    background: url(../../assets/images/Giant\ Panda.png) center;
+    background-size: cover;
+    height: 390px;
+    display: flex;
+    justify-content: center;
+}
+
+.donate__scheme {
+    margin: 60px 0 48px;
+    display: flex;
+}
+
+.donate__scheme__number {
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 58px;
+    color: #000;
+}
+
+.donate__scheme__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 11px;
+    margin-right: 11px;
+    margin-top: 105px;
+}
+
+.animal__img {
+    margin-left: 64px;
+}
+
+.pick__content {
+    margin: 61px 0 0;
+    padding: 39px 92px 62px;
+}
+
+.pick__content h2 {
+    margin-bottom: 21px;
+}
+
+.x__icon {
+    width: 14px;
+    height: 14px;
+    margin-top: 130px;
+}
+
+h4 {
+    align-self: flex-start;
+}
+
+.pick__content h4 {
+    align-self: flex-start;
+}
+
+.range{
+    height: 2px;
+    width: 925px;
+    background-color: #72828E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    margin-left: 15px;
+}
+
+.range__wrapper {
+    background-color: #404950;
+    width: 100%;
+    height: 27px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 10px;
+    margin: 17px 0 0;
+}
+
+.points {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 925px;
+    margin-left: 15px;
+}
+
+.range__radios {
+    width: 100%;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.point {
+    width: 10px;
+    height: 10px;
+    background-color: var(--yellow);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.money {
+    width: 100%;
+    display: flex;
+    gap:0;
+    margin-top: 12px;
+    justify-content: space-between;
+}
+
+.money li {
+    font-size: 26px;
+    line-height: 36px;
+    font-weight: 600;
+    width: 70px;
+    display: flex;
+   justify-content: center;
+}
+
+.money li:first-of-type {
+    justify-content: flex-start;
+}
+
+.money li:last-of-type {
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+.money__input {
+    position: relative;
+    margin: 50px 0 25px;
+}
+
+input[type='number']{
+    height: 54px;
+    width: 268px;
+    margin: 0;
+    background:transparent;
+    border: 1px solid #929699;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+input[type='number']:focus {
+    border-color: var(--green);
+    outline: none;
+}
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.dol {
+    width: 10px;
+    background-color: var(--black-blue);
+    -webkit-mask: url('../../assets/icons/dollar.svg') no-repeat center;
+    mask: url('../../assets/icons/dollar.svg') no-repeat center;
+}
+
+.active .dol {
+    background-color: var(--orange);
+}
+
+.dollar {
+    position: absolute;
+    background-color: #929699;
+    top: 17px;
+    right: 10px;
+    height: 20px;
+    width: 10px;
+    z-index: 10;
+}
+
+.radios {
+    display: flex;
+    gap: 50px;
+    margin-left: -15px;
+}
+
+.amount {
+    align-self: flex-start;
+}
+
+.radio {
+    display: flex;
+    gap: 10px;
+}
+
+.pick__content button {
+    margin: 33px 0 30px;
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--orange);
+}
+
+input[type="radio"]:checked {
+    background: var(--green);
+    border: none;
+}
+
+.range__wrapper input[type="radio"] {
+    width: 40px;
+    height: 40px;
+    padding: 20px;
+    background-color: transparent;
+    border: none;
+    z-index: 5;
+}
+
+.range__wrapper input[type="radio"]:checked,  .range__wrapper input[type="radio"]:hover{
+    background: url(../../assets/icons/roller_icon.png);
+}
+
+.orange {
+    color: var(--orange);
+}
+
+.white {
+    color:#FFF;
+}
+
+.donate__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.donate__info p{
+    margin: 10px 10px 45px 0;
+}
+
+.pick {
+    padding: 40px 0 180px;
+}
+
+@media (max-width: 1280px) {
+    .banner {
+        background-position-x: -173px;
+        background-size: auto;
+    }
+    h3.white {
+        text-align: left;
+        padding-right: 100px;
+    }
+    .donate__info p{
+        margin: 30px 10px 46px 0;
+    }
+    .pick__content {
+        margin: 40px 0 30px;
+        padding: 20px 65px 46px;
+    }
+    .pick__content h2 {
+        margin-bottom: 10px;
+    }
+    .pick__content h4 {
+        width: 850px;
+    }
+    .pick {
+        padding-bottom: 0;
+    }
+    .points {
+        margin-right: 10px;
+        width: 785px;
+    }
+    .points div:first-of-type {
+        display: none;
+    }
+    .range {
+        width: 785px;
+    }
+    .range__wrapper input:first-of-type {
+        display: none;
+    }
+    .range__wrapper {
+        padding: 0;
+    }
+    .range__radios {
+        position: absolute;
+        width: 815px;
+    }
+    .money li:first-of-type {
+        display: none;
+    }
+    .money li:last-of-type {
+        padding-right: 0px;
+    }
+}
+
+@media (max-width: 999px) {
+    .banner {
+        height: 369px;
+        background-size: 1371px;
+        background-position-x: -270px;
+        background-position-y: -130px;
+    }
+
+    h3.white {
+        font-size: 24px;
+        line-height: 29px;
+        padding-right: 0;
+    }
+    .pick {
+        padding-top: 30px;
+    }
+    .donate__info p{
+        margin: 20px 5px 30px 0;
+    }
+
+    .pick__content {
+        margin: 30px 0 46px;
+        padding: 30px 0 31px;
+    }
+    .pick__content.default h2 {
+        margin-bottom: 20px;
+        font-size: 48px;
+        line-height: 58px;
+    }
+    .pick__content.default h4 {
+        text-align: center;
+        width: 600px;
+        word-wrap: break-word;
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .donate__scheme {
+        margin: 50px 0 41px;
+    }
+    .amount {
+        margin-left: 10px;
+    }
+    .range__wrapper {
+        margin-top: 7px;
+    }
+    .money__input {
+        margin-bottom: 31px;
+    }
+    .money__input input {
+        width: 180px;
+        height: 42px;
+    }
+    .dol {
+        top: 11px;
+    }
+    .points {
+        width: 530px;
+        margin: 0 35px;
+    }
+    .range {
+        width: 530px;
+        margin: 0 35px;
+    }
+    .point:nth-child(-n+3),
+    .range__radios input:nth-child(-n+3),
+    .money li:nth-child(-n+3) {
+        display: none;
+    }
+    .money li:last-of-type {
+        padding-right: 20px;
+    }
+    .range__radios {
+        width: 560px;
+        left: 20px;
+    }
+    .money li {
+        width: fit-content;
+    }
+    .money {
+        justify-content: space-between;
+        padding: 0 13px 0 17px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .banner {
+        height: 221px;
+        background-size: 760px;
+        background-position-x: -147px;
+        background-position-y: -57px;
+    }
+    h3.white {
+        padding-right: 0px;
+    }
+    .donate__info p{
+        margin: 20px 5px 30px 0;
+    }
+    .pick h3 {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .pick .pick__content.default {
+        margin: 30px 0 20px;
+        padding-bottom: 20px;
+    }
+    .pick__content.default h2 {
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 10px;
+    }
+    .pick__content.default h4 {
+        font-size: 16px;
+        line-height: 22px;
+        width: 300px;
+    }
+    .donate__scheme {
+        margin: 10px 0 4px;
+    }
+    .amount {
+        margin-left: 0;
+    }
+    .animal__img {
+        width: 160px;
+        height: 139px;
+        margin-left: 36px;
+    }
+    .donate__scheme__text {
+        margin-top: 59px;
+        margin-right: 6px;
+    }
+    .donate__scheme__number {
+        font-size: 40px;
+        line-height: 32px;
+    }
+    .x__icon {
+        width: 8px;
+        height: 8px;
+        margin-top: 73px;
+    }
+    .donate__scheme__text .font-medium {
+        text-align: center;
+        font-size: 9px;
+        line-height: 13px;
+    }
+    .range__wrapper {
+        height: 14px;
+    }
+    .points {
+        margin-left: 18px;
+        width: 265px;
+    }
+    .range {
+        width: 262px;
+        height: 1px;
+        margin: 0 18px;
+    }
+    .point {
+        height: 5px;
+        width: 5px;
+    }
+    .range__radios {
+        width: 280px;
+        left: 10px;
+    }
+    .range__wrapper input[type="radio"] {
+        width: 20px;
+        height: 20px;
+        padding: 0px;
+    }
+    .range__wrapper input[type="radio"]:checked,  .range__wrapper input[type="radio"]:hover{
+        background: url(../../assets/icons/roller_icon.png);
+        background-size: 20px;
+    }
+    .money {
+        margin-top: 7px;
+        padding-left: 10px;
+    }
+    .money__input {
+        margin: 25px 0 23px;
+    }
+    .money li{
+        font-size: 13px;
+        line-height: 18px;
+        width: 30px;
+    }
+    .money .dol {
+        width: 5px;
+        height: 10px;
+        -webkit-mask-size: cover;
+        align-self: center;
+    }
+    .money li:last-child {
+        padding-right: 0;
+    }
+    .pick__content.default p.font-medium {
+       width: 301px;
+    }
+}
